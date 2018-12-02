@@ -1,0 +1,5 @@
+C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessEntities\bin\Debug\eBatch.BusinessEntities.dll
+C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessEntities\bin\Debug\eBatch.BusinessEntities.pdb
+C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.csprojResolveAssemblyReference.cache
+C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.dll
+C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessEntities\obj\Debug\eBatch.BusinessEntities.pdb

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCF01578-6360-4245-A1E3-69E6F9DF4144}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eBatchApp</RootNamespace>
+    <AssemblyName>eBatchApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MarkupConverter, Version=0.0.0.0, Culture=neutral, PublicKeyToken=275ae570975796c6, processorArchitecture=MSIL">
+      <HintPath>..\packages\MarkupConverter.1.0.5\lib\net45\MarkupConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ToggleSwitch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\ToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Transitions, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\Transitions.dll</HintPath>
+    </Reference>
+    <Reference Include="XsPDF, Version=7.13.0.1552, Culture=neutral, PublicKeyToken=5af05832079d47a8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binaries\XsPDF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\FrmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmAddUser.Designer.cs">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FrmAdminAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmAdminAudit.Designer.cs">
+      <DependentUpon>FrmAdminAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FrmAdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmAdminHome.Designer.cs">
+      <DependentUpon>FrmAdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FrmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmSupplier.Designer.cs">
+      <DependentUpon>FrmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FrmHomeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FrmHomeDashboard.Designer.cs">
+      <DependentUpon>FrmHomeDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\HomeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\HomeDashboard.Designer.cs">
+      <DependentUpon>HomeDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="DataEntry\FrmDataEntryHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEntry\FrmDataEntryHome.Designer.cs">
+      <DependentUpon>FrmDataEntryHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntry\FrmInvoiceEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEntry\FrmInvoiceEntry.Designer.cs">
+      <DependentUpon>FrmInvoiceEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntry\InvoiceEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEntry\InvoiceEntry.Designer.cs">
+      <DependentUpon>InvoiceEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrep\FrmAddFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrep\FrmAddFile.Designer.cs">
+      <DependentUpon>FrmAddFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrep\FrmDataPrepHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrep\FrmDataPrepHome.Designer.cs">
+      <DependentUpon>FrmDataPrepHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrep\FrmEditFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrep\FrmEditFile.Designer.cs">
+      <DependentUpon>FrmEditFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrep\FrmEditInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrep\FrmEditInvoice.Designer.cs">
+      <DependentUpon>FrmEditInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrep\FrmPDFView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrep\FrmPDFView.Designer.cs">
+      <DependentUpon>FrmPDFView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrep\FrmRejectImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrep\FrmRejectImage.Designer.cs">
+      <DependentUpon>FrmRejectImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrep\FrmRejectReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrep\FrmRejectReason.Designer.cs">
+      <DependentUpon>FrmRejectReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\FrmAddUser.resx">
+      <DependentUpon>FrmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FrmAdminAudit.resx">
+      <DependentUpon>FrmAdminAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FrmAdminHome.resx">
+      <DependentUpon>FrmAdminHome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FrmHomeDashboard.resx">
+      <DependentUpon>FrmHomeDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\HomeDashboard.resx">
+      <DependentUpon>HomeDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntry\FrmDataEntryHome.resx">
+      <DependentUpon>FrmDataEntryHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntry\FrmInvoiceEntry.resx">
+      <DependentUpon>FrmInvoiceEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrep\FrmAddFile.resx">
+      <DependentUpon>FrmAddFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrep\FrmDataPrepHome.resx">
+      <DependentUpon>FrmDataPrepHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrep\FrmEditFile.resx">
+      <DependentUpon>FrmEditFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrep\FrmEditInvoice.resx">
+      <DependentUpon>FrmEditInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrep\FrmPDFView.resx">
+      <DependentUpon>FrmPDFView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrep\FrmRejectImage.resx">
+      <DependentUpon>FrmRejectImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrep\FrmRejectReason.resx">
+      <DependentUpon>FrmRejectReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Binaries\x86\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Binaries\itextsharp.dll" />
+    <Content Include="Binaries\x64\XsPDF.Native.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="bin\Debug\Output\Images\Page0.jpg" />
+    <Content Include="XsPDF.Native.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Binaries\XsPDF.dll" />
+    <None Include="Resources\expand.png" />
+    <None Include="Resources\collapse.png" />
+    <None Include="Resources\Admin_black.png" />
+    <None Include="Resources\DataEntry_black.png" />
+    <None Include="Resources\DataPrep_black.png" />
+    <None Include="Resources\Disbursement_black.png" />
+    <None Include="Resources\Reports_black.png" />
+    <None Include="Resources\Research_black.png" />
+    <None Include="Resources\Verification_black.png" />
+    <None Include="Resources\loadingsqure.gif" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\show_loader.gif" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\delete1.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\pictureBox1.BackgroundImage.png" />
+    <None Include="Resources\pictureBox1.BackgroundImage.bmp" />
+    <Content Include="Binaries\ToggleSwitch.dll" />
+    <Content Include="Binaries\Transitions.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eBatch.BusinessEntities\eBatch.BusinessEntities.csproj">
+      <Project>{72895262-4eb3-4854-bc0d-6c8afc0e1fa0}</Project>
+      <Name>eBatch.BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eBatch.BusinessLogic\eBatch.BusinessLogic.csproj">
+      <Project>{2d741a78-bbd0-4360-b527-dac7c9f73dfd}</Project>
+      <Name>eBatch.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Purple\eBatch.Theme.csproj">
+      <Project>{8ca70037-f57d-466e-9a8e-607d12ee6621}</Project>
+      <Name>eBatch.Theme</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
