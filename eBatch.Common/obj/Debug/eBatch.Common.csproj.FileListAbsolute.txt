@@ -61,3 +61,12 @@ C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.Common\bin\Deb
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.dll
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.pdb
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.Common\obj\Debug\eBatch.Common.csprojResolveAssemblyReference.cache
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\bin\Debug\App.config
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\bin\Debug\eBatch.Common.dll.config
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\bin\Debug\eBatch.Common.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\bin\Debug\eBatch.Common.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\bin\Debug\Dapper.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\bin\Debug\Dapper.xml
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\obj\Debug\eBatch.Common.csprojResolveAssemblyReference.cache
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\obj\Debug\eBatch.Common.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.Common\obj\Debug\eBatch.Common.pdb

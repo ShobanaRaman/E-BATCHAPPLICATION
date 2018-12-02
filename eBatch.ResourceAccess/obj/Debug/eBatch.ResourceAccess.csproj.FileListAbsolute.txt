@@ -11,3 +11,16 @@ C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.ResourceAccess
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.ResourceAccess\obj\Debug\eBatch.ResourceAccess.csprojResolveAssemblyReference.cache
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.ResourceAccess\obj\Debug\eBatch.ResourceAccess.dll
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.ResourceAccess\obj\Debug\eBatch.ResourceAccess.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\App.config
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\eBatch.ResourceAccess.dll.config
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\eBatch.ResourceAccess.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\eBatch.ResourceAccess.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\Dapper.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\eBatch.BusinessEntities.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\eBatch.Common.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\eBatch.BusinessEntities.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\eBatch.Common.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\bin\Debug\Dapper.xml
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\obj\Debug\eBatch.ResourceAccess.csprojResolveAssemblyReference.cache
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\obj\Debug\eBatch.ResourceAccess.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.ResourceAccess\obj\Debug\eBatch.ResourceAccess.pdb

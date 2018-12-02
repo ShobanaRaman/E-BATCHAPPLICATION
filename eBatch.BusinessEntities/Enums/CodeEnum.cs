@@ -16,6 +16,6 @@ namespace eBatch.BusinessEntities.Enums
         InvoiceType,
         InvoiceRejectReason,
         InvoiceResearchReason,
-        FileRejectionReason
+        FileRejectionReason,
     }
 }

@@ -404,6 +404,9 @@ namespace eBatchApp.Admin
             LoadUsers();
         }
 
+        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        {
 
+        }
     }
 }

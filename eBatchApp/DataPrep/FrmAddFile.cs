@@ -88,7 +88,7 @@ namespace eBatchApp.DataPrep
             pdfPath = pdfPath.Replace("{CIN}", strCIN);
             pdfPath = pdfPath.Replace("{RECEIPTDATE}", dtReceiptDate.Value.ToString("yyyy-MM-dd"));
 
-            fileLog.ReceiptDate = dtReceiptDate.Value.ToShortDateString();
+            fileLog.ReceiptDate = dtReceiptDate.Value;
             fileLog.AttachmentFileName = FileName;
             fileLog.AttachmentFileDisplayName = FileName;
             fileLog.SupplierId = SupplierId;

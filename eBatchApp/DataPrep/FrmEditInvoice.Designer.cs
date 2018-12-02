@@ -62,8 +62,8 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.lblUser = new eBatch.Theme.Purple.eLabel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.cbUsers = new System.Windows.Forms.ComboBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel9.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -507,6 +507,7 @@
             this.txtSupplierEmail.Multiline = true;
             this.txtSupplierEmail.Name = "txtSupplierEmail";
             this.txtSupplierEmail.PasswordChar = '\0';
+            this.txtSupplierEmail.ReadOnly = true;
             this.txtSupplierEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtSupplierEmail.SelectedText = "";
             this.txtSupplierEmail.SelectionLength = 0;
@@ -588,10 +589,6 @@
             this.panel17.Size = new System.Drawing.Size(446, 60);
             this.panel17.TabIndex = 17;
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // cbUsers
             // 
             this.cbUsers.FormattingEnabled = true;
@@ -602,7 +599,11 @@
             this.cbUsers.Size = new System.Drawing.Size(221, 21);
             this.cbUsers.Sorted = true;
             this.cbUsers.TabIndex = 25;
-            this.cbUsers.SelectedIndexChanged += new System.EventHandler(this.cbUsers_SelectedIndexChanged);
+           
+            //
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // FrmEditInvoice
             // 

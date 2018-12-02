@@ -28,6 +28,7 @@ namespace eBatchApp.DataPrep
             GlobalConstants.baseForm.Controls.Find("pnlMenuContainer", true).FirstOrDefault().Visible = true;
             dgvFileList.AutoGenerateColumns = false;
             dgvInvoiceList.AutoGenerateColumns = false;
+            Utility.LoadCodeToCB(cbFilterDifficultyLevel, CodeEnum.DifficultyLevel, "--Select--");
             Utility.LoadCodeToCB(cbDifficultyLevel, CodeEnum.DifficultyLevel, "--Select--");
             Utility.LoadCodeToCB(cbInvoiceStatus, CodeEnum.InvoiceStatus, "--Select--");
 
@@ -36,27 +37,32 @@ namespace eBatchApp.DataPrep
 
 
         }
-        public void LoadFileList(string FromDate = null, string ToDate =null, int?DifficultyLevel=0 , string FileName =null )
+        public void LoadFileList(DateTime? FromDate = null, DateTime? ToDate =null, int?DifficultyLevel=0 , string FileName =null )
         {
 
         
-             var FileLst = new AttachmentLogBpl().GetFileListDT(FromDate,ToDate, DifficultyLevel, FileName);
+            var FileLst = new AttachmentLogBpl().GetFileListDT(FromDate,ToDate, DifficultyLevel, FileName);
             dgvFileList.DataSource = FileLst;
             dgvFileList.PageSize = 10;
+            dgvFileList.Sort(dgvFileList.Columns[1], ListSortDirection.Ascending);
             dgvFileList.SetPagedDataSource(FileLst, bindingNavigator1);
+           
            
 
         }
 
         private void btnAddFile_Click(object sender, EventArgs e)
         {
-            using (FrmAddFile addFile = new FrmAddFile())
-            {
-                if (addFile.ShowDialog() != DialogResult.Cancel)
-                {
+            //using (FrmAddFile addFile = new FrmAddFile())
+            //{
+            //    if (addFile.ShowDialog() != DialogResult.Cancel)
+            //    {
 
-                }
-            }
+            //    }
+            //}
+            FrmAddFile addFile = new FrmAddFile();
+            addFile.ShowDialog();
+            addFile.TopMost = true;
             LoadFileList();
         }
 
@@ -163,7 +169,6 @@ namespace eBatchApp.DataPrep
         public void LoadInvoiceList(DateTime? FromDate = null, DateTime? ToDate = null, int? DifficultyLevel = 0, int? invoiceId = 0, int? Status = 0, string UserAssigned = null)
         {
 
-
             var InvoiceList = new InvoiceBpl().GetInvoiceLisDT(FromDate, ToDate, DifficultyLevel, invoiceId, Status,UserAssigned);
             dgvInvoiceList.DataSource = InvoiceList;
             dgvInvoiceList.PageSize = 10;
@@ -175,12 +180,19 @@ namespace eBatchApp.DataPrep
 
         private void BtnInvoiceFilter_Click(object sender, EventArgs e)
         {
-            LoadInvoiceList(FromDateTimePicker1.Value, ToDateTimePicker1.Value, (int)cbDifficultyLevel.SelectedValue,Convert.ToInt32( txtInvoiceId.Text), (int)cbInvoiceStatus.SelectedValue,txtSupplierEmail.Text);
+
+            int txtinvocie = 0;
+            if(txtInvoiceId.Text!=string.Empty)
+            {
+                txtinvocie = int.Parse(txtInvoiceId.Text);
+            }
+            
+            LoadInvoiceList(FromDateTimePicker1.Value.AddDays(-1).Date, ToDateTimePicker1.Value.AddDays(1), (int)cbDifficultyLevel.SelectedValue, txtinvocie, (int)cbInvoiceStatus.SelectedValue,txtSupplierEmail.Text);
         }
 
         private void btnFilter_Click(object sender, EventArgs e)
         {
-            LoadFileList(FromDateTimePicker.Value.ToShortDateString(), ToDateTimePicker.Value.ToShortDateString(), (int)cbFilterDifficultyLevel.SelectedValue, txtFilterFileName.Text);
+            LoadFileList(FromDateTimePicker.Value.AddDays(-1).Date, ToDateTimePicker.Value.AddDays(1).Date, (int)cbFilterDifficultyLevel.SelectedValue, txtFilterFileName.Text);
         }
         private void ClearFilter_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -226,5 +238,7 @@ namespace eBatchApp.DataPrep
                 }
             }
             }
+
+   
     }
 }

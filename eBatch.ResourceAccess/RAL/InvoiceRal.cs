@@ -124,7 +124,7 @@ namespace eBatch.ResourceAccess
         {
             var dynParams = new DynamicParameters();
             dynParams.Add("@Id", invoice.Id);
-            dynParams.Add("@SupplierEmail", invoice.SupplierEmail);
+            //dynParams.Add("@SupplierEmail", invoice.SupplierEmail);
             dynParams.Add("@ReceiptDate", invoice.ReceiptDate);
             dynParams.Add("@UserAssigned", invoice.UserAssigned);
             dynParams.Add("@DifficultyLevel", invoice.DifficultyLevel);

@@ -14,7 +14,7 @@ namespace eBatch.BusinessEntities.Models
 
         public string SupplierEmail { get; set; }
 
-        public string ReceiptDate { get; set; }
+        public DateTime ReceiptDate { get; set; }
 
         public int AttachmentId { get; set; }
 

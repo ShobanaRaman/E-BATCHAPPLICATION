@@ -50,19 +50,20 @@ namespace eBatchApp.DataPrep
             fileLog.Id = FileId;
             fileLog.AttachmentFileName = FileName;
             fileLog.DifficultyLevel = cbDifficultyLevel.SelectedValue.toInt();
+            string folderpath = pdfPath;
             string PDFPath = pdfPath + "\\" + fileLog.AttachmentFileName;
-            SaveFile(PDFPath);
+            SaveFile(PDFPath, pdfPath);
             new AttachmentLogBpl().EditFile(fileLog);
             Utility.ShowSuccessmessage("Edited the File " );
             this.Close();
 
         }
 
-       private void SaveFile(string destPath) //considered saving single file
+       private void SaveFile(string destPath,string folderPath) //considered saving single file
         {            
-            if (!Directory.Exists(destPath))
+            if (!Directory.Exists(folderPath))
             {
-                Directory.CreateDirectory(Path.GetDirectoryName(destPath));        
+                Directory.CreateDirectory(Path.GetDirectoryName(folderPath));        
             }
             MoveReplacedFiles();
             File.Copy(strSourceFilePath, destPath );

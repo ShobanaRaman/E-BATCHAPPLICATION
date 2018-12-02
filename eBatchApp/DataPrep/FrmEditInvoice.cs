@@ -25,11 +25,11 @@ namespace eBatchApp.DataPrep
             InitializeComponent();
 
             Utility.LoadCodeToCB(cbDifficultyLevel, CodeEnum.DifficultyLevel, "--Select--");
-            Utility.LoadCodeToCB(cbStatus, CodeEnum.InvoiceStatus, "--Select--");
-            LoadUserRoleCB();
+            Utility.LoadCodeToCB(cbStatus, CodeEnum.InvoiceStatus, "--Select--");          
+            LoadUsersCB();
 
         }
-        private void LoadUserRoleCB()
+        private void LoadUsersCB()
         {
             lstusers = Utility.GeteBatchUsers();
             var userNames = lstusers.Select(x => x.username);
@@ -63,21 +63,22 @@ namespace eBatchApp.DataPrep
             invoice.Status = Convert.ToString(cbStatus.SelectedValue.toInt());
             invoice.DifficultyLevel = cbDifficultyLevel.SelectedValue.toInt();
             invoice.UserAssigned = Convert.ToString(cbUsers.Text);
-            new InvoiceBpl().EditInvoice(invoice);
-            Utility.ShowSuccessmessage("Edited the invoice ");
+            var invoicedifflevel= cbDifficultyLevel.SelectedValue.toInt();
+            var userdifflevel  = GlobalConstants.lstUsers.Where(x => x.username == cbUsers.Text.ToString()).Select(x => x.difficultylevel).FirstOrDefault();
+            if(userdifflevel< invoicedifflevel)
+            {
+                Utility.ShowSuccessmessage("User Difficulty Level is lower than Invoice difficulty level j ");
+            }
+            else
+            {
+                new InvoiceBpl().EditInvoice(invoice);
+                Utility.ShowSuccessmessage("Edited the invoice ");
+            }
+
+       
             this.Close();
         }
 
-        private void cbUsers_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-            //ComboBox cb = (ComboBox)sender;
-            //if (!cb.Focused) { return; }
 
-            //var selectedItem = lstusers.Where(x => x.username == cb.SelectedItem.ToString()).SingleOrDefault();
-   
-
-        
-    }
     }
 }

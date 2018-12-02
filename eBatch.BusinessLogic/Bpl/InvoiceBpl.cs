@@ -18,7 +18,7 @@ namespace eBatch.BusinessLogic.Bpl
         //   / return result;
         //}
 
-        public DataTable GetInvoiceLisDT(DateTime? Fromdate = null, DateTime? ToDate = null, int? difficultyLevel = null, int?InvoiceId = null, int? Status = null ,string SupplierEmail = null)
+        public DataTable GetInvoiceLisDT(DateTime? Fromdate = null, DateTime ?ToDate = null, int? difficultyLevel = null, int?InvoiceId = null, int? Status = null ,string SupplierEmail = null)
         {
             return new InvoiceRal().GetInvoiceListDT(Fromdate, ToDate, difficultyLevel, InvoiceId, SupplierEmail, Status).ToDataTable();
         }

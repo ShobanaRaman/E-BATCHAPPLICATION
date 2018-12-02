@@ -38,6 +38,15 @@
             this.btnAddFile = new eBatch.Theme.Purple.eNewButton();
             this.tbInvoiceList = new System.Windows.Forms.TabPage();
             this.dgvInvoiceList = new eBatch.Theme.Purple.eGrid();
+            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvReceiptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvInvoiceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSupplierEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDifficultyLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.User = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvView = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel11 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -114,15 +123,6 @@
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvReceiptDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvInvoiceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvSupplierEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvDifficultyLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.User = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvView = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel3.SuspendLayout();
             this.tbInvoiceList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInvoiceList)).BeginInit();
@@ -254,6 +254,75 @@
             this.dgvInvoiceList.TabIndex = 18;
             this.dgvInvoiceList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInvoiceList_CellContentClick);
             // 
+            // dgvId
+            // 
+            this.dgvId.DataPropertyName = "Id";
+            this.dgvId.FillWeight = 99.85529F;
+            this.dgvId.HeaderText = "ID";
+            this.dgvId.Name = "dgvId";
+            this.dgvId.ReadOnly = true;
+            this.dgvId.Visible = false;
+            // 
+            // dgvReceiptDate
+            // 
+            this.dgvReceiptDate.DataPropertyName = "ReceiptDate";
+            this.dgvReceiptDate.FillWeight = 99.35419F;
+            this.dgvReceiptDate.HeaderText = "Receipt Date";
+            this.dgvReceiptDate.Name = "dgvReceiptDate";
+            this.dgvReceiptDate.ReadOnly = true;
+            // 
+            // dgvInvoiceId
+            // 
+            this.dgvInvoiceId.DataPropertyName = "InvoiceId";
+            this.dgvInvoiceId.FillWeight = 100.0996F;
+            this.dgvInvoiceId.HeaderText = "Invoice Id";
+            this.dgvInvoiceId.Name = "dgvInvoiceId";
+            this.dgvInvoiceId.ReadOnly = true;
+            // 
+            // dgvSupplierEmail
+            // 
+            this.dgvSupplierEmail.DataPropertyName = "SupplierEmail";
+            this.dgvSupplierEmail.HeaderText = "Supplier Email";
+            this.dgvSupplierEmail.Name = "dgvSupplierEmail";
+            this.dgvSupplierEmail.ReadOnly = true;
+            // 
+            // dgvDifficultyLevel
+            // 
+            this.dgvDifficultyLevel.DataPropertyName = "DifficultyLevel";
+            this.dgvDifficultyLevel.FillWeight = 99.25581F;
+            this.dgvDifficultyLevel.HeaderText = "Difficulty Level";
+            this.dgvDifficultyLevel.Name = "dgvDifficultyLevel";
+            this.dgvDifficultyLevel.ReadOnly = true;
+            // 
+            // dgvStatus
+            // 
+            this.dgvStatus.DataPropertyName = "Status";
+            this.dgvStatus.HeaderText = "Status";
+            this.dgvStatus.Name = "dgvStatus";
+            this.dgvStatus.ReadOnly = true;
+            // 
+            // User
+            // 
+            this.User.DataPropertyName = "UserAssigned";
+            this.User.HeaderText = "User Assigned";
+            this.User.Name = "User";
+            this.User.ReadOnly = true;
+            // 
+            // dgvedit
+            // 
+            this.dgvedit.FillWeight = 101.6019F;
+            this.dgvedit.HeaderText = "Actions";
+            this.dgvedit.Image = global::eBatchApp.Properties.Resources.edit1;
+            this.dgvedit.Name = "dgvedit";
+            this.dgvedit.ReadOnly = true;
+            // 
+            // dgvView
+            // 
+            this.dgvView.HeaderText = "";
+            this.dgvView.Image = global::eBatchApp.Properties.Resources.delete1;
+            this.dgvView.Name = "dgvView";
+            this.dgvView.ReadOnly = true;
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Gainsboro;
@@ -275,7 +344,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.37848F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.369203F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.29499F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel2.Controls.Add(this.panel20, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel19, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel12, 4, 0);
@@ -297,9 +366,9 @@
             // 
             this.panel20.Controls.Add(this.cbInvoiceStatus);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(952, 3);
+            this.panel20.Location = new System.Drawing.Point(943, 3);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(178, 45);
+            this.panel20.Size = new System.Drawing.Size(187, 45);
             this.panel20.TabIndex = 14;
             // 
             // cbInvoiceStatus
@@ -316,9 +385,9 @@
             // 
             this.panel19.Controls.Add(this.cbDifficultyLevel);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(769, 3);
+            this.panel19.Location = new System.Drawing.Point(762, 3);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(177, 45);
+            this.panel19.Size = new System.Drawing.Size(175, 45);
             this.panel19.TabIndex = 13;
             // 
             // cbDifficultyLevel
@@ -335,9 +404,9 @@
             // 
             this.panel12.Controls.Add(this.eLabel1);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(680, 3);
+            this.panel12.Location = new System.Drawing.Point(674, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(83, 45);
+            this.panel12.Size = new System.Drawing.Size(82, 45);
             this.panel12.TabIndex = 8;
             // 
             // eLabel1
@@ -361,9 +430,9 @@
             // 
             this.panel13.Controls.Add(this.txtSupplierEmail);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(544, 3);
+            this.panel13.Location = new System.Drawing.Point(539, 3);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(130, 45);
+            this.panel13.Size = new System.Drawing.Size(129, 45);
             this.panel13.TabIndex = 9;
             // 
             // txtSupplierEmail
@@ -408,9 +477,9 @@
             // 
             this.panel14.Controls.Add(this.txtInvoiceId);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(397, 3);
+            this.panel14.Location = new System.Drawing.Point(393, 3);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(141, 45);
+            this.panel14.Size = new System.Drawing.Size(140, 45);
             this.panel14.TabIndex = 10;
             // 
             // txtInvoiceId
@@ -455,9 +524,9 @@
             // 
             this.panel15.Controls.Add(this.ToDateTimePicker1);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(184, 3);
+            this.panel15.Location = new System.Drawing.Point(182, 3);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(207, 45);
+            this.panel15.Size = new System.Drawing.Size(205, 45);
             this.panel15.TabIndex = 11;
             // 
             // ToDateTimePicker1
@@ -472,7 +541,7 @@
             this.panel16.Controls.Add(this.FromDateTimePicker1);
             this.panel16.Location = new System.Drawing.Point(3, 3);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(175, 45);
+            this.panel16.Size = new System.Drawing.Size(173, 45);
             this.panel16.TabIndex = 12;
             // 
             // FromDateTimePicker1
@@ -553,14 +622,14 @@
             this.toolStripSeparator3,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem});
-            this.bindingNavigator2.Location = new System.Drawing.Point(146, 13);
+            this.bindingNavigator2.Location = new System.Drawing.Point(161, 14);
             this.bindingNavigator2.MoveFirstItem = this.toolStripButton1;
             this.bindingNavigator2.MoveLastItem = this.toolStripButton4;
             this.bindingNavigator2.MoveNextItem = this.toolStripButton3;
             this.bindingNavigator2.MovePreviousItem = this.toolStripButton2;
             this.bindingNavigator2.Name = "bindingNavigator2";
             this.bindingNavigator2.PositionItem = this.toolStripTextBox1;
-            this.bindingNavigator2.Size = new System.Drawing.Size(255, 25);
+            this.bindingNavigator2.Size = new System.Drawing.Size(286, 25);
             this.bindingNavigator2.TabIndex = 10;
             this.bindingNavigator2.Text = "bindingNavigator2";
             // 
@@ -1178,75 +1247,6 @@
             this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
             this.dataGridViewImageColumn5.ReadOnly = true;
             this.dataGridViewImageColumn5.Width = 160;
-            // 
-            // dgvId
-            // 
-            this.dgvId.DataPropertyName = "Id";
-            this.dgvId.FillWeight = 99.85529F;
-            this.dgvId.HeaderText = "ID";
-            this.dgvId.Name = "dgvId";
-            this.dgvId.ReadOnly = true;
-            this.dgvId.Visible = false;
-            // 
-            // dgvReceiptDate
-            // 
-            this.dgvReceiptDate.DataPropertyName = "ReceiptDate";
-            this.dgvReceiptDate.FillWeight = 99.35419F;
-            this.dgvReceiptDate.HeaderText = "Receipt Date";
-            this.dgvReceiptDate.Name = "dgvReceiptDate";
-            this.dgvReceiptDate.ReadOnly = true;
-            // 
-            // dgvInvoiceId
-            // 
-            this.dgvInvoiceId.DataPropertyName = "InvoiceId";
-            this.dgvInvoiceId.FillWeight = 100.0996F;
-            this.dgvInvoiceId.HeaderText = "Invoice Id";
-            this.dgvInvoiceId.Name = "dgvInvoiceId";
-            this.dgvInvoiceId.ReadOnly = true;
-            // 
-            // dgvSupplierEmail
-            // 
-            this.dgvSupplierEmail.DataPropertyName = "SupplierEmail";
-            this.dgvSupplierEmail.HeaderText = "Supplier Email";
-            this.dgvSupplierEmail.Name = "dgvSupplierEmail";
-            this.dgvSupplierEmail.ReadOnly = true;
-            // 
-            // dgvDifficultyLevel
-            // 
-            this.dgvDifficultyLevel.DataPropertyName = "DifficultyLevel";
-            this.dgvDifficultyLevel.FillWeight = 99.25581F;
-            this.dgvDifficultyLevel.HeaderText = "Difficulty Level";
-            this.dgvDifficultyLevel.Name = "dgvDifficultyLevel";
-            this.dgvDifficultyLevel.ReadOnly = true;
-            // 
-            // dgvStatus
-            // 
-            this.dgvStatus.DataPropertyName = "Status";
-            this.dgvStatus.HeaderText = "Status";
-            this.dgvStatus.Name = "dgvStatus";
-            this.dgvStatus.ReadOnly = true;
-            // 
-            // User
-            // 
-            this.User.DataPropertyName = "UserAssigned";
-            this.User.HeaderText = "User Assigned";
-            this.User.Name = "User";
-            this.User.ReadOnly = true;
-            // 
-            // dgvedit
-            // 
-            this.dgvedit.FillWeight = 101.6019F;
-            this.dgvedit.HeaderText = "Actions";
-            this.dgvedit.Image = global::eBatchApp.Properties.Resources.edit1;
-            this.dgvedit.Name = "dgvedit";
-            this.dgvedit.ReadOnly = true;
-            // 
-            // dgvView
-            // 
-            this.dgvView.HeaderText = "";
-            this.dgvView.Image = global::eBatchApp.Properties.Resources.delete1;
-            this.dgvView.Name = "dgvView";
-            this.dgvView.ReadOnly = true;
             // 
             // FrmDataPrepHome
             // 

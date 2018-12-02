@@ -18,7 +18,7 @@ namespace eBatch.BusinessLogic.Bpl
         //{
         //    return new AttachmentLogRal().GetFileList().ToDataTable();
         //}
-            public DataTable GetFileListDT(string FromDate = null, string ToDate = null, int? DifficultyLevel = 0, string FileName = null)
+            public DataTable GetFileListDT(DateTime? FromDate = null, DateTime? ToDate = null, int? DifficultyLevel = 0, string FileName = null)
         {
             return new AttachmentLogRal().GetFileListDT(FromDate, ToDate, DifficultyLevel, FileName).ToDataTable();
         }

@@ -13,11 +13,11 @@ namespace eBatch.ResourceAccess.RAL
 {
     public class AttachmentLogRal
     {
-        public List<FileLog> GetFileListDT(string FromDate = null, string ToDate = null, int? DifficultyLevel = 0, string FileName = null)
+        public List<FileLog> GetFileListDT(DateTime? FromDate = null, DateTime? ToDate = null, int? DifficultyLevel = 0, string FileName = null)
         {
 
             var dynParams = new DynamicParameters();
-            dynParams.Add("@FromDate", FromDate?.ToString());
+            dynParams.Add("@FromDate", FromDate);
             dynParams.Add("@ToDate", ToDate);
             dynParams.Add("@DifficultyLevel", DifficultyLevel);
             dynParams.Add("@FileName", FileName);

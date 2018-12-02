@@ -12,3 +12,17 @@ C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessLogic\
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.csprojResolveAssemblyReference.cache
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.dll
 C:\Users\rajaraman\Desktop\eBatchAppaftrdataprep\eBatchApp\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\App.config
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\eBatch.BusinessLogic.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\eBatch.BusinessLogic.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\eBatch.BusinessEntities.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\eBatch.ResourceAccess.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\Dapper.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\eBatch.Common.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\eBatch.BusinessEntities.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\eBatch.ResourceAccess.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\Dapper.xml
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\bin\Debug\eBatch.Common.pdb
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.dll
+C:\Users\rajaraman\Source\Repos\E-BATCHAPPLICATION\eBatch.BusinessLogic\obj\Debug\eBatch.BusinessLogic.pdb
